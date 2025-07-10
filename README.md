@@ -6,4 +6,16 @@ Ket understanding of following concepts:
 - Deadlocks: Action that philos holds 1 folk and waits for the other
 - Starvation: Ensure very philo get a chance to eat and nonne are left waiting indefinitely.
 
-- 
+// valgrind
+// --fair-sched=yes
+// --trace-children=yes
+// --tool=memcheck
+// --leak-check=full
+// --tool=helgrind
+// --tool=drd
+// --read-var-info=yes
+// --show-reachable=yes
+
+
+ -fsanitize=thread. put it on makefile 
+setarch $(uname -m) -R $SHELL
